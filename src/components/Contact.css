@@ -1,0 +1,113 @@
+.contact {
+  background-color: var(--bg-light);
+  padding: 5rem 0;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: -1.5rem auto 3rem;
+  font-size: 1.1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.primary-contact-card {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.primary-contact-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.primary-contact-card p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  background-color: var(--bg-light);
+  color: var(--primary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.primary-contact-card .contact-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--secondary);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+}
+
+.contact-link {
+  font-size: 1rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.contact-link.highlight {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--secondary);
+  display: block;
+}
+
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background-color: var(--bg-white);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.contact-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+}
+
+.contact-address {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .contact-details-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-link.highlight {
+    font-size: 2rem;
+  }
+}
